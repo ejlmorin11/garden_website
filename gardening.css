@@ -1,0 +1,212 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    background-color: #222;
+    
+}
+
+/* Header here */
+
+header {
+    background-color: #eaeaea;
+    padding: 1rem 2vw;
+    text-align: center;
+    background-color: #000;
+}
+
+header strong {
+    color: #317E0B ;
+}
+
+header h1 {
+    margin: 0;
+    color: #FFCC00;
+}
+
+header p {
+    margin: 0;
+    color: #FFCC00;
+    letter-spacing: 1.5px;
+    font-style: italic;
+    font-size: large;
+    padding: 0 0 0 .5rem;
+}
+
+.contactme {
+    color: #fff;
+}
+
+
+/* nav */
+nav {
+    background-color: #fc0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+
+nav li.active a {
+    background-color:#105B09;
+    color: #fff;
+    transform: none;
+}
+
+nav li.active a:hover {
+        background-color:#105B09;
+        color: #fff;
+}
+
+nav a:hover {
+    color: #FFEE22;
+    background-color: #539F2D;
+    transform: scale(1.1);
+
+}
+
+/* main */
+main {
+    padding: 1rem 2vw;
+    font-size: large;
+    color: #fff;
+
+}
+
+main strong {
+    color: #fc0;
+}
+main h1 {
+    color: #b40412;
+}
+
+main h2 {
+    color: #FFCC00;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #222;
+    font-size: large;
+    list-style-type: circle;
+}
+
+main dl dt {
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+}
+
+main dl dd {
+    color: #FFCC00;
+    font-size: .9rem;
+    font-size: large;
+}
+
+main ul {
+    list-style-type: square;
+    font-size: large;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    font-size: large;
+}
+
+main address {
+    font-style: normal;
+    background-color: #317E0B;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #FFCC00;
+    border-radius: .2rem;
+}
+
+main a:hover {
+    color: #996644;
+    
+}
+address a:hover {
+    color: #D2CF8C
+}
+
+main a {
+    color: #fff;
+
+}
+
+address a {
+    color: #fff;
+    font-style: italic;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #FFCC00;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #000;
+}
+
+footer a {
+    color: #111;
+    clear:both;
+}
+/* home page img */
+
+figure.garden {
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.garden img {
+    width: 100%;
+    height: auto;
+}
+
+figure.garden figcaption {
+    text-align: center;
+    font-size: .75rem;
+    color:#29ce1a;
+}
+
+/* gallery images */
+
+main h1 {
+    margin: 0 0 .8rem 2.3rem;
+    color:#FFCC00;
+    font-style: italic;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    color: #FFCC00;
+}
