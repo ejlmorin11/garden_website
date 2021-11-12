@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>grow Green, Save Green</title>
+        <link rel="stylesheet" href="gardening.css" media="all">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Gardening Done Your Way: Home">
+        <meta name="author" content="EJ Morin"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <!-- start of the page header-->
+    <header>
+        <img src="GardenLogoSmall.png" alt="site logo" width= "100" height="85">
+        <div>
+            <h1>Grow <strong>Green</strong> Save <strong>Green</strong></h1>
+            <p>Gain veggies, save your wallet</p>
+        <a href="#contactme" class="contactme">Schedule a visit today!</a>
+        </div>
+    </header>
+    <!-- start of the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Grow Green. Save Green: Home</a>
+            </li>
+            <li><a href="about.html">More about gardening</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="form.html">Vegetable Form</a></li>
+        </ul>
+    </nav>
+    <!-- end of the main navigation-->
+    <!-- start the page main -->
+    <main>
+        <h1>Get some vegetables</h1>
+        
+        <form method="get" class="myForm" action="thanks.html">
+        
+        <fieldset>
+            <legend>Interested Person</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <br>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+                <label>Email*<input type="email" name="email" required></label>
+                <br>
+                <label>Address(for delivery only)<br>
+                <textarea name="address" placeholder="Put address here"></textarea>
+                </label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Get my veggies</legend> 
+            <label><input type="radio" name="method" value="Pick-up">Pick veggies in Person</label>
+            <label><input type="radio" name="method" value="Front-Porch">Front Porch Drop-off($5 fee)</label>
+            <label><input type="radio" name="method" value="Curbside">Curbside Pick-up($1 fee)</label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Schedule me</legend> 
+            <label><input type="checkbox" name="porch" value="chosen">I'll pick myself (no scheduling needed)</label>
+            <br>
+            <label>Preferred Delivery Time (for drop-off)
+                <select name="time">
+                <option value="none">Please Select</option>
+                <option value="morning">Between 7:00am and 11:00am</option>
+                <option value="noon">Between 11:00am and 2:00pm</option>
+                <option value="afternoon">Between 2:00pm and 5:00pm</option>
+                <option value="evening">Between 5:00pm and 8:00pm</option>
+                </select>
+            </label>
+            <label>Curbside Pick-up (order at least 2hrs in advance)
+            <select name="time">
+            <option value="none">Please Select</option>
+            <option value="9:00am and 10:00am">Between 9:00am and 10:00am</option>
+            <option value="10:00am and 11:00am">Between 10:00am and 11:00am</option>
+            <option value="11:00am and noon">Between 11:00am and noon</option>
+            <option value="noon and 1:00pm">Between noon and 1:00pm</option>
+            <option value="1:00pm and 2:00pm">Between 1:00pm and 2:00pm</option>
+            <option value="2:00pm and 3:00pm">Between 2:00pm and 3:00pm</option>
+            <option value="3:00pm and 4:00pm">Between 3:00pm and 4:00pm</option>
+            <option value="4:00pm and 5:00pm">Between 4:00pm and 5:00pm</option>
+            </select>
+            </label>
+        </fieldset>
+
+        <label>Comments
+            <textarea name="comments" placeholder="Please add any special information regarding your order"></textarea>
+        </label>
+
+
+        <br>
+        <input type="submit" value="GET MY VEGGIES">    
+        </form>
+    </main>
+        <!-- start of the page footer-->
+        <footer>
+            &copy; 2021 &bull; EJ Morin &bull; <a href="mailto:10552716@my.uvu.edu">Email me</a><br>
+        </footer>
+
+        
+    </body>
+</html>

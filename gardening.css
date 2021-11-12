@@ -1,19 +1,30 @@
+* {box-sizing: border-box;}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     font-weight: 300;
     margin: 0;
-    background-color: #222;
+    background-color: #000;
     
 }
 
 /* Header here */
 
 header {
-    background-color: #eaeaea;
     padding: 1rem 2vw;
     text-align: center;
-    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: left;
+    padding: 1rem 1vw;
+    
+}
+
+header div {
+    padding-left: 17vw;
+    
 }
 
 header strong {
@@ -38,7 +49,39 @@ header p {
     color: #fff;
 }
 
+/*small screens*/
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: solid 1px #fc0;
+        color: #fff;
+    }
 
+    nav .active a {
+        background-color: #317E0B;
+        color: #fc0;
+        background-image: linear-gradient(to bottom, #317E0B, #64aF3F);
+    }
+} /* end of the media query*/
+
+/*big screens*/
+@media only screen and (min-width: 601px) {
 /* nav */
 nav {
     background-color: #fc0;
@@ -50,6 +93,7 @@ nav ul {
     margin: 0;
     display: flex;
 }
+
 
 nav a {
     font-size: 1.1rem;
@@ -64,6 +108,7 @@ nav li.active a {
     background-color:#105B09;
     color: #fff;
     transform: none;
+    background-image: linear-gradient(to bottom, #fb0, #b90);
 }
 
 nav li.active a:hover {
@@ -74,11 +119,23 @@ nav li.active a:hover {
 nav a:hover {
     color: #FFEE22;
     background-color: #539F2D;
-    transform: scale(1.1);
-
 }
 
+    
+    
+} /* end of the media query*/
+
 /* main */
+.collage {
+    width: 100%;
+    margin: 0;
+}  
+
+.collage img {
+    width: 100%;
+    height: auto;
+    
+}
 main {
     padding: 1rem 2vw;
     font-size: large;
@@ -206,7 +263,68 @@ div.gallery {
     flex-wrap: wrap;
 }
 
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(255,204,0,0.8);
+}
+
 div.gallery figcaption {
     text-align: center;
     color: #FFCC00;
+}
+
+/* form styling */
+form legend {
+    color: #FFCC00;
+}
+
+fieldset {
+    border-color: #000;
+    border-radius: .1rem;
+}
+
+form :required {
+    border: solid 3px #FFCC00;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+}
+
+form textarea {
+    border: solid 1px #888;
+    padding: .5rem;
+    margin-top: .5rem;
+    width: 250px;
+    border-radius: .3rem;
+}
+
+form [type=text], form [type=tel], form [type=email], form select, form [type="radio"] {
+    margin: .7rem .7rem;
+}
+
+form [type=text], form [type=tel], form [type=email] {
+    display: flex;
+    justify-content: left;
+}
+
+.myForm [type=submit] {
+    background-color: #317E0B;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    font-size: x-large;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 2px 3px black;
+}
+
+#redirect {
+    color: #fff;
+}
+
+header , nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
 }
