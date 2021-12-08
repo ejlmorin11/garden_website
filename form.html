@@ -38,7 +38,30 @@
     <!-- start the page main -->
     <main>
         <h1>Order</h1>
+
+        <p>These vegetables are always in stock. Please ask about other veggies' status</p>
         
+        <table class="veggiesTable">
+            <tr>
+                <th>Veggie</th><th>Cost</th><th>$ per</th>
+            </tr>
+            <tr>
+                <td>Seranno Peppers</td><td>$3</td><td>lb.</td>
+            </tr>
+            <tr>
+                <td>Zucchini</td><td>$2</td><td>lb.</td>
+            </tr>
+            <tr>
+                <td>Kohlrabi</td><td>$4</td><td>head</td>
+            </tr>
+            <tr>
+                <td>Cilantro</td><td>$2</td><td>Oz.</td>
+            </tr>
+            <tr>
+                <td>Okra</td><td>$0.50</td><td>each item</td>
+            </tr>
+        </table>
+   
         <form method="get" class="myForm" action="thanks.html">
         
         <fieldset>
@@ -49,7 +72,7 @@
                 <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
                 <label>Email*<input type="email" name="email" required></label>
                 <br>
-                <label>Address(for delivery only)<br>
+                <label>Address (for delivery only)<br>
                 <textarea name="address" placeholder="Put address here"></textarea>
                 </label>
         </fieldset>
@@ -57,8 +80,8 @@
         <fieldset>
         <legend>Get my veggies</legend> 
             <label><input type="radio" name="method" value="Pick-up">Pick veggies in Person</label>
-            <label><input type="radio" name="method" value="Front-Porch">Front Porch Drop-off($5 fee)</label>
-            <label><input type="radio" name="method" value="Curbside">Curbside Pick-up($1 fee)</label>
+            <label><input type="radio" name="method" value="Front-Porch">Front Porch Drop-off ($5 fee)</label>
+            <label><input type="radio" name="method" value="Curbside">Curbside Pick-up ($1 fee)</label>
         </fieldset>
 
         <fieldset>
@@ -74,6 +97,7 @@
                 <option value="evening">Between 5:00pm and 8:00pm</option>
                 </select>
             </label>
+            <br>
             <label>Curbside Pick-up (order at least 2hrs in advance)
             <select name="time">
             <option value="none">Please Select</option>
@@ -89,7 +113,7 @@
             </label>
         </fieldset>
 
-        <label>Comments
+        <label>Comments <br>
             <textarea name="comments" placeholder="Please add any special information regarding your order"></textarea>
         </label>
 

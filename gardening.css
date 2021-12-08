@@ -343,3 +343,40 @@ header , nav, main, footer {
     max-width: 64rem;
     margin: 0 auto;
 }
+
+form {
+    border: solid 1px #29ce1a;
+    margin: 4rem;
+}
+
+/* table */
+table.veggiesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table.veggiesTable th {
+    background-color: #29ce1a;;
+    color: black;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+
+table.veggiesTable td {
+    color: orangered;
+    padding: .4rem 2vw;
+}
+
+table.veggiesTable tr:nth-child(even) {
+    background-color: #ccceee;
+}
+
+table.veggiesTable tr:nth-child(odd) {
+    background-color: #333;
+}
+
+table.veggiesTable tr:hover {
+    background-color: #999;
+    
+}
