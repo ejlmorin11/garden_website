@@ -85,6 +85,7 @@ header p {
 /* nav */
 nav {
     background-color: #fc0;
+    text-align: center;
 }
 
 nav ul {
@@ -92,6 +93,16 @@ nav ul {
     padding: 0 2vw;
     margin: 0;
     display: flex;
+}
+
+#visitMe {
+    text-align: center;
+}
+
+
+#photoHeader {
+    text-align: center;
+    margin-right: 5rem;
 }
 
 
@@ -102,6 +113,9 @@ nav a {
     font-weight: 700;
     display: block;
     padding: .83rem 2rem;
+    display: flex;
+    justify-content: center;
+
 }
 
 nav li.active a {
@@ -148,6 +162,7 @@ main strong {
 }
 main h1 {
     color: #b40412;
+
 }
 
 main h2 {
